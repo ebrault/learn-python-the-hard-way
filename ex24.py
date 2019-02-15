@@ -1,6 +1,9 @@
+# Prints the string
 print "Let's practice everything"
+# Prints the string with escape sequences
 print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
 
+# Sets poem to multi-line string with escape sequences
 poem = """
 \tThe lovely world
 with logic so firmly planted
@@ -10,22 +13,31 @@ and requires an explanation
 \n\t\twhere there is none.
 """
 
+# Prints 12 dashes
 print "---------------"
+# Prints poem
 print poem
+# Prints 12 dashes
 print "---------------"
 
-
+# Sets five to this computation (10 - 2) + (3 - 6) = 8 + -3 = 5
 five = 10 - 2 + 3 - 6
+# Prints the string with the string formatter and inserts the variable for above
+# computation
 print "This should be five: %s" % five
 
 # Defines function secret formula with variable started as parameter
 def secret_formula(started):
+    # Sets jelly_beans to whatever argument is passed in to started * 500
     jelly_beans = started * 500
+    # Sets jars to jelly_beans / 1000
     jars = jelly_beans / 1000
+    # Sets crates to jars / 100
     crates = jars / 100
+    # Returns the values of jelly_beans, jars, and crates
     return jelly_beans, jars, crates
 
-
+# Sets start point to 10,000
 start_point = 10000
 # Calls secret_formula with start_point passed as argument to started
 beans, jars, crates = secret_formula(start_point)
